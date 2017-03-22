@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF2BFA701E82C20B0046ACC2 /* 8723_f995_10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF2BFA6F1E82C20B0046ACC2 /* 8723_f995_10.jpg */; };
+		EF2BFA721E82C25A0046ACC2 /* 8723_f995_10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF2BFA711E82C25A0046ACC2 /* 8723_f995_10.jpg */; };
+		EF2BFA741E82C6B50046ACC2 /* VCRegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BFA731E82C6B50046ACC2 /* VCRegistroViewController.swift */; };
+		EF2BFA761E82E9E10046ACC2 /* VCPrincipal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BFA751E82E9E10046ACC2 /* VCPrincipal.swift */; };
+		EF2BFA781E82F11A0046ACC2 /* TVCMiCelda.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2BFA771E82F11A0046ACC2 /* TVCMiCelda.swift */; };
 		EFB11A251E78078D007EA1FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB11A241E78078D007EA1FA /* AppDelegate.swift */; };
 		EFB11A271E78078D007EA1FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB11A261E78078D007EA1FA /* ViewController.swift */; };
 		EFB11A2A1E78078D007EA1FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFB11A281E78078D007EA1FA /* Main.storyboard */; };
@@ -34,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EF2BFA6F1E82C20B0046ACC2 /* 8723_f995_10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 8723_f995_10.jpg; path = ../../../Downloads/8723_f995_10.jpg; sourceTree = "<group>"; };
+		EF2BFA711E82C25A0046ACC2 /* 8723_f995_10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 8723_f995_10.jpg; path = imagenes/8723_f995_10.jpg; sourceTree = SOURCE_ROOT; };
+		EF2BFA731E82C6B50046ACC2 /* VCRegistroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCRegistroViewController.swift; sourceTree = "<group>"; };
+		EF2BFA751E82E9E10046ACC2 /* VCPrincipal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCPrincipal.swift; sourceTree = "<group>"; };
+		EF2BFA771E82F11A0046ACC2 /* TVCMiCelda.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVCMiCelda.swift; sourceTree = "<group>"; };
 		EFB11A211E78078D007EA1FA /* Actividad1-JM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Actividad1-JM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFB11A241E78078D007EA1FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFB11A261E78078D007EA1FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,12 +107,17 @@
 		EFB11A231E78078D007EA1FA /* Actividad1-JM */ = {
 			isa = PBXGroup;
 			children = (
+				EF2BFA711E82C25A0046ACC2 /* 8723_f995_10.jpg */,
+				EF2BFA6F1E82C20B0046ACC2 /* 8723_f995_10.jpg */,
 				EFB11A241E78078D007EA1FA /* AppDelegate.swift */,
 				EFB11A261E78078D007EA1FA /* ViewController.swift */,
 				EFB11A281E78078D007EA1FA /* Main.storyboard */,
 				EFB11A2B1E78078D007EA1FA /* Assets.xcassets */,
 				EFB11A2D1E78078D007EA1FA /* LaunchScreen.storyboard */,
 				EFB11A301E78078D007EA1FA /* Info.plist */,
+				EF2BFA731E82C6B50046ACC2 /* VCRegistroViewController.swift */,
+				EF2BFA751E82E9E10046ACC2 /* VCPrincipal.swift */,
+				EF2BFA771E82F11A0046ACC2 /* TVCMiCelda.swift */,
 			);
 			path = "Actividad1-JM";
 			sourceTree = "<group>";
@@ -232,9 +247,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF2BFA721E82C25A0046ACC2 /* 8723_f995_10.jpg in Resources */,
 				EFB11A2F1E78078D007EA1FA /* LaunchScreen.storyboard in Resources */,
 				EFB11A2C1E78078D007EA1FA /* Assets.xcassets in Resources */,
 				EFB11A2A1E78078D007EA1FA /* Main.storyboard in Resources */,
+				EF2BFA701E82C20B0046ACC2 /* 8723_f995_10.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +278,9 @@
 			files = (
 				EFB11A271E78078D007EA1FA /* ViewController.swift in Sources */,
 				EFB11A251E78078D007EA1FA /* AppDelegate.swift in Sources */,
+				EF2BFA741E82C6B50046ACC2 /* VCRegistroViewController.swift in Sources */,
+				EF2BFA781E82F11A0046ACC2 /* TVCMiCelda.swift in Sources */,
+				EF2BFA761E82E9E10046ACC2 /* VCPrincipal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +525,7 @@
 				EFB11A4B1E78078D007EA1FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EFB11A4C1E78078D007EA1FA /* Build configuration list for PBXNativeTarget "Actividad1-JMTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +534,7 @@
 				EFB11A4E1E78078D007EA1FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EFB11A4F1E78078D007EA1FA /* Build configuration list for PBXNativeTarget "Actividad1-JMUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +543,7 @@
 				EFB11A511E78078D007EA1FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

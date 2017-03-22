@@ -9,7 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet var btnLogear:UIButton?
+    @IBOutlet var nameTextField: UITextField?
+    @IBOutlet var passTextField: UITextField?
+    @IBOutlet var txter: UITextView?
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +22,15 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    
+    @IBAction func LoginButton() {
+        if (nameTextField?.text=="juanma") && (passTextField?.text=="12345"){
+             self.performSegue(withIdentifier:"tran1", sender: self)
+        }
+        else{
+            txter?.text="Usuario o contraseña no existe"
+        }
+    }
+    
+    
 }
-
