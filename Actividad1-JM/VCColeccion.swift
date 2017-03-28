@@ -1,18 +1,17 @@
 //
-//  VCPrincipal.swift
+//  VCColeccion.swift
 //  Actividad1-JM
 //
-//  Created by JUAN MARÍA JUSUE ROYAN on 22/3/17.
+//  Created by JUAN MARÍA JUSUE ROYAN on 28/3/17.
 //  Copyright © 2017 JUAN MARÍA JUSUE ROYAN. All rights reserved.
 //
 
 import UIKit
 
-class VCPrincipal: UIViewController,UITableViewDelegate,UITableViewDataSource {
-    @IBOutlet var tbMiTable:UITableView?
+class VCColeccion: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource {
+    @IBOutlet var colPrincipal:UICollectionView?
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
@@ -20,32 +19,34 @@ class VCPrincipal: UIViewController,UITableViewDelegate,UITableViewDataSource {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 5;
     }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell:TVCMiCelda = tableView.dequeueReusableCell(withIdentifier: "micelda1") as! TVCMiCelda
-        //cell.lblNombre?.text=""
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell:CVCMiCelda2=collectionView.dequeueReusableCell(withReuseIdentifier: "micelda2",for:indexPath) as! CVCMiCelda2
         if(indexPath.row==0){
             cell.lblNombre?.text="Swift"
-            cell.imagn?.image=UIImage(named:"Image.png")
+            cell.imgvMain?.image=UIImage(named:"Image.png")
         }
         if(indexPath.row==1){
             cell.lblNombre?.text="Objective c"
-            cell.imagn?.image=UIImage(named:"Image-1.png")
+            cell.imgvMain?.image=UIImage(named:"Image-1.png")
         }
         if(indexPath.row==2){
             cell.lblNombre?.text="Java"
-            cell.imagn?.image=UIImage(named:"descarga.png")
+            cell.imgvMain?.image=UIImage(named:"descarga.png")
         }
         if(indexPath.row==3){
+            
+            cell.imgvMain?.image=UIImage(named:"c.png")
             cell.lblNombre?.text="c++"
-            cell.imagn?.image=UIImage(named:"c.png")
         }
         if(indexPath.row==4){
             cell.lblNombre?.text="Scala"
-            cell.imagn?.image=UIImage(named:"scala-logo.png")
+            cell.imgvMain?.image=UIImage(named:"scala-logo.png")
         }
+
         return cell
     }
     

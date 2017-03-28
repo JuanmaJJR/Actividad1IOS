@@ -24,7 +24,7 @@ class ViewController: UIViewController {
 
     
     @IBAction func LoginButton() {
-        if (nameTextField?.text=="juanma") && (passTextField?.text=="12345"){
+        if (nameTextField?.text==DataHolder.sharedInstance.Usuario) && (passTextField?.text==DataHolder.sharedInstance.Pass){
              self.performSegue(withIdentifier:"tran1", sender: self)
         }
         else{

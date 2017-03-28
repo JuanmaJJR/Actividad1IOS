@@ -39,9 +39,9 @@ class VCRegistroViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    /*@IBAction func btnSingUp(_ sender: UIButton) {
+    @IBAction func btnSingUp(_ sender: UIButton) {
         
-        if psswd != psswd2 {
+       if (psswd?.text != psswd2?.text){
             
             let AlertaError : UIAlertController = UIAlertController(title: "Error", message: "Has introducido mal las contraseñas", preferredStyle: .actionSheet)
             
@@ -52,7 +52,8 @@ class VCRegistroViewController: UIViewController {
             present(AlertaError, animated: true, completion: nil)
             
         }
-        
+        DataHolder.sharedInstance.Usuario=uss?.text
+        DataHolder.sharedInstance.Pass=psswd?.text
     }
-*/
+
 }
