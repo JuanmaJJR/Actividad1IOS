@@ -12,6 +12,7 @@ class VCColeccion: UIViewController,UICollectionViewDelegate,UICollectionViewDat
     @IBOutlet var colPrincipal:UICollectionView?
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
     }
 

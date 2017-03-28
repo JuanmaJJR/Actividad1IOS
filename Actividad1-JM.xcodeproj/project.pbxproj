@@ -15,6 +15,7 @@
 		EFAAD12D1E8A55E1003D2578 /* VCColeccion.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAAD12C1E8A55E1003D2578 /* VCColeccion.swift */; };
 		EFAAD12F1E8A5C33003D2578 /* CVCMiCelda2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAAD12E1E8A5C33003D2578 /* CVCMiCelda2.swift */; };
 		EFAAD1341E8A654F003D2578 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAAD1331E8A654F003D2578 /* MapKit.framework */; };
+		EFAAD1361E8A6A9F003D2578 /* ios_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = EFAAD1351E8A6A9F003D2578 /* ios_logo.png */; };
 		EFB11A251E78078D007EA1FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB11A241E78078D007EA1FA /* AppDelegate.swift */; };
 		EFB11A271E78078D007EA1FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB11A261E78078D007EA1FA /* ViewController.swift */; };
 		EFB11A2A1E78078D007EA1FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFB11A281E78078D007EA1FA /* Main.storyboard */; };
@@ -50,6 +51,7 @@
 		EFAAD12C1E8A55E1003D2578 /* VCColeccion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCColeccion.swift; sourceTree = "<group>"; };
 		EFAAD12E1E8A5C33003D2578 /* CVCMiCelda2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVCMiCelda2.swift; sourceTree = "<group>"; };
 		EFAAD1331E8A654F003D2578 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		EFAAD1351E8A6A9F003D2578 /* ios_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ios_logo.png; path = imagenes/ios_logo.png; sourceTree = SOURCE_ROOT; };
 		EFB11A211E78078D007EA1FA /* Actividad1-JM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Actividad1-JM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFB11A241E78078D007EA1FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFB11A261E78078D007EA1FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 		EFB11A231E78078D007EA1FA /* Actividad1-JM */ = {
 			isa = PBXGroup;
 			children = (
+				EFAAD1351E8A6A9F003D2578 /* ios_logo.png */,
 				EF2BFA711E82C25A0046ACC2 /* 8723_f995_10.jpg */,
 				EFB11A241E78078D007EA1FA /* AppDelegate.swift */,
 				EFB11A261E78078D007EA1FA /* ViewController.swift */,
@@ -274,6 +277,7 @@
 				EFB11A2F1E78078D007EA1FA /* LaunchScreen.storyboard in Resources */,
 				EFB11A2C1E78078D007EA1FA /* Assets.xcassets in Resources */,
 				EFB11A2A1E78078D007EA1FA /* Main.storyboard in Resources */,
+				EFAAD1361E8A6A9F003D2578 /* ios_logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

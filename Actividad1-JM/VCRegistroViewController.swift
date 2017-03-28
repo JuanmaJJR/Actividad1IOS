@@ -20,7 +20,7 @@ class VCRegistroViewController: UIViewController {
     @IBOutlet var mail: UITextField?
     override func viewDidLoad() {
         super.viewDidLoad()
-
+self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bg-colored.png")!)
         // Do any additional setup after loading the view.
     }
 

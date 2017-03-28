@@ -11,10 +11,14 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet var nameTextField: UITextField?
     @IBOutlet var passTextField: UITextField?
-    @IBOutlet var txter: UITextView?
+    @IBOutlet weak var lblError: UILabel!
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        // Do any additional setup after loading the view, typically from a nib.c
+        lblError?.text = ""
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bg-colored.png")!)
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,13 +28,19 @@ class ViewController: UIViewController {
 
     
     @IBAction func LoginButton() {
+        if (nameTextField?.text == "" && passTextField?.text == ""){
+            lblError?.text="Introduce un usuario y una contraseña"
+        }
+        
         if (nameTextField?.text==DataHolder.sharedInstance.Usuario) && (passTextField?.text==DataHolder.sharedInstance.Pass){
              self.performSegue(withIdentifier:"tran1", sender: self)
         }
         else{
-            txter?.text="Usuario o contraseña no existe"
+            lblError?.text = "Usuario o contraseña no existe"
         }
     }
+   
+
     
     
 }
