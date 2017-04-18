@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class VCRegistroViewController: UIViewController {
     
@@ -52,8 +54,19 @@ self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bg-colored.png
             present(AlertaError, animated: true, completion: nil)
             
         }
-        DataHolder.sharedInstance.Usuario=uss?.text
-        DataHolder.sharedInstance.Pass=psswd?.text
+       else{
+            FIRAuth.auth()?.createUser(withEmail: (mail?.text)!, password: (psswd?.text)!) { (user, error) in
+            
+                if(error==nil){
+                
+                }
+                else{
+                    print("--->>>>",error!)
+                }
+            
+            
+            }
+        }
+        
     }
-
 }
